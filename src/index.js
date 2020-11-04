@@ -4,7 +4,6 @@ menusArr.forEach((item) => {
   item.addEventListener('click', () => {
     const nextNode = item.nextSibling;
     const nextnextNode = nextNode.nextSibling;
-    console.log(nextnextNode);
     if (nextnextNode.className === 'menuItems') {
       nextnextNode.classList.remove('menuItems');
       nextnextNode.classList.add('visible');

@@ -1,0 +1,11 @@
+.menu1 {
+  display: none;
+}
+
+.menu2 {
+  display: none;
+}
+
+.visible {
+  display: 'block';
+}

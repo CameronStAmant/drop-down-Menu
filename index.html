@@ -11,19 +11,16 @@
   </head>
 
   <body>
-    <p>Hello, world!</p>
-    <div>
-      <button class="menu" id="menu1">Menu 1</button>
-      <p class="menu1">Home 1</p>
-      <p class="menu1">Profile 1</p>
-      <p class="menu1">Settings 1</p>
-    </div>
-    <div>
-      <button class="menu" id="menu2">Menu 2</button>
-      <p class="menu2">Home 2</p>
-      <p class="menu2">Profile 2</p>
-      <p class="menu2">Settings 2</p>
-    </div>
+    <ul id="nav1">
+      <li>Home</li>
+      <li class="menuParent">
+        About
+        <ul class="menu">
+          <li>Example 1</li>
+          <li>Example 2</li>
+        </ul>
+      </li>
+    </ul>
     <script src="./main.js"></script>
   </body>
 </html>

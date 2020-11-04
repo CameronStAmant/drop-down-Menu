@@ -1,1 +1,1 @@
-(()=>{const o=document.getElementsByClassName("menu"),e=Array.from(o);console.log(e),e.forEach((o=>{console.log(o),o.addEventListener("click",(()=>{console.log("hi")}))}))})();
+(()=>{const s=document.getElementsByClassName("menu");Array.from(s).forEach((s=>{s.addEventListener("click",(()=>{Array.from(s.childNodes).forEach((s=>{"menuItems"===s.className?(s.classList.remove("menuItems"),s.classList.add("visible")):"visible"===s.className&&(s.classList.remove("visible"),s.classList.add("menuItems"))}))}))}))})();

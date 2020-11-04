@@ -1,9 +1,16 @@
 const menus = document.getElementsByClassName('menu');
 const menusArr = Array.from(menus);
-console.log(menusArr);
 menusArr.forEach((item) => {
-  console.log(item);
   item.addEventListener('click', () => {
-    console.log('hi');
+    const childNodes = Array.from(item.childNodes);
+    childNodes.forEach((menuItems) => {
+      if (menuItems.className === 'menuItems') {
+        menuItems.classList.remove('menuItems');
+        menuItems.classList.add('visible');
+      } else if (menuItems.className === 'visible') {
+        menuItems.classList.remove('visible');
+        menuItems.classList.add('menuItems');
+      }
+    });
   });
 });

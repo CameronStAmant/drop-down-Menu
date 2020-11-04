@@ -1,7 +1,7 @@
-#nav1 .menu {
+#nav1 ul.menuItems {
   display: none;
 }
 
-.visible {
+#nav1 ul.visible {
   display: block;
 }

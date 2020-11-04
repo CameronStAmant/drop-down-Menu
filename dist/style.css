@@ -1,15 +1,7 @@
-.menu {
-  display: 'block';
-}
-
-.menu1 {
-  display: none;
-}
-
-.menu2 {
+#nav1 .menu {
   display: none;
 }
 
 .visible {
-  display: 'block';
+  display: block;
 }
